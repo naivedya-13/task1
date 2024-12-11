@@ -1,0 +1,75 @@
+/* styles.css */
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 23%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-title {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.stat-percentage {
+  font-size: 14px;
+  color: #4caf50;
+}
+
+.dashboard-charts {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.left-chart, .right-chart {
+  width: 48%;
+}
+
+.chart-type-selector button {
+  margin-right: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: #f0f4f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chart-type-selector button:hover {
+  background-color: #e0e4eb;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}

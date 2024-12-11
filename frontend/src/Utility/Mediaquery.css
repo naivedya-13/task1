@@ -1,0 +1,83 @@
+/* For small devices (mobile) */
+@media (max-width: 767px) {
+    /* Admin Panel: Make it a collapsible menu with 3 horizontal lines */
+    .admin-panel {
+      display: flex;
+      flex-direction: column;
+      width: 60px; /* Make the admin panel smaller */
+    }
+  
+    .admin-panel h1 {
+      display: none; /* Hide the text "TailAdmin" on small screens */
+    }
+  
+    .admin-panel .hamburger {
+      display: block; /* Show hamburger icon for small screens */
+      cursor: pointer;
+    }
+  
+    .admin-panel .hamburger svg {
+      width: 36px;
+      height: 36px;
+      fill: white;
+    }
+  
+    /* The sidebar should be hidden initially and only appear when the hamburger is clicked */
+    .admin-sidebar {
+      display: none; /* Hide sidebar initially */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #1f2937; /* Adjust this color as per your requirement */
+      padding: 20px;
+      z-index: 1000;
+    }
+  
+    .admin-sidebar.open {
+      display: block; /* Show sidebar when it's open */
+    }
+  
+    /* Navbar right side elements collapse into a hamburger-style menu */
+    .navbar-right {
+      display: none; /* Hide elements by default */
+    }
+  
+    .navbar-right.open {
+      display: block; /* Show elements when menu is open */
+      position: absolute;
+      right: 0;
+      top: 60px; /* Position it below the navbar */
+      background-color: #1f2937; /* Adjust as needed */
+      padding: 10px;
+      width: 200px;
+    }
+  
+    .navbar-right.open .menu-item {
+      display: block;
+      padding: 10px;
+      color: white;
+    }
+  
+    /* When the hamburger icon is clicked, show the menu items */
+    .hamburger.open + .navbar-right {
+      display: block;
+    }
+  }
+  
+  /* Ensure that the hamburger is hidden on larger screens */
+  @media (min-width: 768px) {
+    .admin-panel .hamburger {
+      display: none;
+    }
+  
+    .admin-sidebar {
+      display: block;
+    }
+  
+    .navbar-right {
+      display: flex;
+    }
+  }
+  
